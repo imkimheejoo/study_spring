@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<header th:replace="/include/header :: headerFragment"></header>
 <body>
-<h1>hi</h1>
+
+<div th:each="todo : ${todos}">
+    <div th:text="${todo.title}"></div>
+</div>
+
+
+
+
+<footer th:replace="/include/footer :: footerFragment"></footer>
 </body>
 </html>
