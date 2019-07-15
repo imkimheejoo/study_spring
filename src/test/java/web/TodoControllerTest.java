@@ -16,7 +16,6 @@ import todo.demo.web.TodoController;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {TodoControllerTest.class, TodoController.class})
 @AutoConfigureMockMvc
@@ -40,3 +39,4 @@ public class TodoControllerTest {
 
 
 }
+

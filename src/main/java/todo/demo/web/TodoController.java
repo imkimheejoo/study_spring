@@ -5,12 +5,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 import todo.demo.domain.Todo;
 import todo.demo.repository.TodoRepository;
 
 import java.util.List;
 
-@Controller
+@RestController
 public class TodoController {
 //    @Autowired
     TodoRepository todoRepository;
