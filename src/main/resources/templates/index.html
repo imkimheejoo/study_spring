@@ -4,7 +4,8 @@
 <body>
 
 <div th:each="todo : ${todos}">
-    <div th:text="${todo.title}"></div>
+    <div th:text="${todo.contents}"></div>
+    <div th:text="${todo.writeDate}"></div>
 </div>
 
 

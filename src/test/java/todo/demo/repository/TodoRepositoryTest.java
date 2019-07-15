@@ -21,7 +21,7 @@ public class TodoRepositoryTest {
 
     @Test
     public void name() {
-        Todo todo = new Todo(1L,"Buddy","aaa","ddd");
+        Todo todo = new Todo("study spring");
 
         Todo t  = todoRepository.save(todo);
         assertEquals(todo, t);
