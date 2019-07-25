@@ -11,7 +11,7 @@ import todo.demo.repository.TodoRepository;
 
 import java.util.List;
 
-@RestController
+@Controller
 public class TodoController {
 //    @Autowired
     TodoRepository todoRepository;
